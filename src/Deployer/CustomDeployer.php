@@ -11,7 +11,7 @@
 
 namespace EasyCorp\Bundle\EasyDeployBundle\Deployer;
 
-use EasyCorp\Bundle\EasyDeployBundle\Configuration\CustomConfiguration;
+use EasyCorp\Bundle\EasyDeployBundle\Configuration\DefaultConfiguration;
 use EasyCorp\Bundle\EasyDeployBundle\Requirement\AllowsLoginViaSsh;
 use EasyCorp\Bundle\EasyDeployBundle\Requirement\CommandExists;
 
