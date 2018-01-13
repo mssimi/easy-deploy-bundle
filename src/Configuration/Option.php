@@ -48,7 +48,7 @@ final class Option
     const sharedDirs = 'sharedDirs';
     const srcDir = 'srcDir';
     const symfonyEnvironment = 'symfonyEnvironment';
-    const environmentVariables = 'environmentVariables';
+    const enviromentVariables = 'enviromentVariables';
     const templatesDir = 'templatesDir';
     const updateRemoteComposerBinary = 'updateRemoteComposerBinary';
     const useSshAgentForwarding = 'useSshAgentForwarding';
