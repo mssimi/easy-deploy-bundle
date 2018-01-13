@@ -27,6 +27,7 @@ final class DefaultConfiguration extends AbstractConfiguration
     // their IDE autocompletion. To simplify things, the builder defines setter
     // methods named the same as each option.
     private $symfonyEnvironment = 'prod';
+    private $enviromentVariables = [];
     private $keepReleases = 5;
     private $repositoryUrl;
     private $repositoryBranch = 'master';
@@ -400,5 +401,12 @@ final class DefaultConfiguration extends AbstractConfiguration
         if (!is_readable($this->localProjectDir.DIRECTORY_SEPARATOR.$path)) {
             throw new InvalidConfigurationException(sprintf('The "%s" value given in %s() is not relative to the project root directory or is not readable.', $path, $methodName));
         }
+    }
+
+    public function enviromentVariables(array $envVars) : self
+    {
+        $this->enviromentVariables = $envVars;
+
+        return $this;
     }
 }

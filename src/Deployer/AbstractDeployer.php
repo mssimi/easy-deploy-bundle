@@ -210,8 +210,7 @@ abstract class AbstractDeployer
 
     private function getCommandEnvVars() : array
     {
-        $symfonyEnvironment = $this->getConfig(Option::symfonyEnvironment);
-        $envVars = null !== $symfonyEnvironment ? ['APP_ENV' => $symfonyEnvironment] : [];
+        $envVars = $this->getConfig(Option::environmentVariables);
 
         return $envVars;
     }
