@@ -210,7 +210,7 @@ abstract class AbstractDeployer
 
     private function getCommandEnvVars() : array
     {
-        $envVars = $this->getConfig(Option::environmentVariables);
+        $envVars = $this->getConfig(Option::enviromentVariables);
 
         return $envVars;
     }
