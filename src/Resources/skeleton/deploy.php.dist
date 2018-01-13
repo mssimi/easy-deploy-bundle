@@ -1,8 +1,8 @@
 <?php
 
-use EasyCorp\Bundle\EasyDeployBundle\Deployer\DefaultDeployer;
+use EasyCorp\Bundle\EasyDeployBundle\Deployer\CustomDeployer;
 
-return new class extends DefaultDeployer
+return new class extends CustomDeployer
 {
     public function configure()
     {

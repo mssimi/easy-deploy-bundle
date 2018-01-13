@@ -22,9 +22,9 @@ use EasyCorp\Bundle\EasyDeployBundle\Requirement\CommandExists;
  */
 abstract class CustomDeployer extends AbstractDeployer
 {
-    public function getConfigBuilder() : CustomConfiguration
+    public function getConfigBuilder() : DefaultConfiguration
     {
-        return new CustomConfiguration();
+        return new DefaultConfiguration($this->getContext()->getLocalProjectRootDir());
     }
 
     public function getRequirements() : array
